@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/styles.css">
+    <title>Game Interface</title>
+</head>
+<body>
+    <div id="page-wrapper">
+        <div id="header">
+            <h3>Wood: </h3>
+            <h3>Stone: </h3>
+            <h3>Food: </h3>
+            <h4 id="woodNum">0</h4>
+            <h4 id="stoneNum">0</h4>
+            <h4 id="foodNum">0</h4>
+        </div>
+        <div id="left-bar">
+            <div>
+                <h4>Lumber Hut</h4>
+                <p>Small hut that produces wood.</p>
+                <button id="buildLumberBtn">Build</button>
+            </div>
+            <div>
+                <h4>Quarry</h4>
+                <p>An encampment that collects stone from the earth.</p>
+                <button id="buildQuarryBtn">Build</button>
+            </div>
+            <div>
+                <h4>Farm</h4>
+                <p>A field of crops that regularly produce food.</p>
+                <button id="buildFarmBtn">Build</button>
+            </div>
+            <div>
+                <h4>Logging Co.</h4>
+                <p>A larger, more organized setup of wood collectors.</p>
+                <button id="buildLoggingBtn">Build</button>
+            </div>
+            <div>
+                <h4>Pasture</h4>
+                <p>A pasture full of livestock that produces large amounts of food.</p>
+                <button id="buildPastureBtn">Build</button>
+            </div>
+        </div>
+        <div id="grid-map">
+            <div class="gridSpaces" id="1-1">1</div>
+            <div class="gridSpaces" id="1-2">2</div>
+            <div class="gridSpaces" id="1-3">3</div>
+            <div class="gridSpaces" id="1-4">4</div>
+            <div class="gridSpaces" id="1-5">5</div>
+            <div class="gridSpaces" id="1-6">6</div>
+            <div class="gridSpaces" id="1-7">7</div>
+            <div class="gridSpaces" id="1-8">8</div>
+            <div class="gridSpaces" id="1-9">9</div>
+            <div class="gridSpaces" id="1-10">10</div>
+            <div class="gridSpaces" id="1-11">11</div>
+            <div class="gridSpaces" id="1-12">12</div>
+            <div class="gridSpaces" id="2-1">1</div>
+            <div class="gridSpaces" id="2-2">2</div>
+            <div class="gridSpaces" id="2-3">3</div>
+            <div class="gridSpaces" id="2-4">4</div>
+            <div class="gridSpaces" id="2-5">5</div>
+            <div class="gridSpaces" id="2-6">6</div>
+            <div class="gridSpaces" id="2-7">7</div>
+            <div class="gridSpaces" id="2-8">8</div>
+            <div class="gridSpaces" id="2-9">9</div>
+            <div class="gridSpaces" id="2-10">10</div>
+            <div class="gridSpaces" id="2-11">11</div>
+            <div class="gridSpaces" id="2-12">12</div>
+            <div class="gridSpaces" id="3-1">1</div>
+            <div class="gridSpaces" id="3-2">2</div>
+            <div class="gridSpaces" id="3-3">3</div>
+            <div class="gridSpaces" id="3-4">4</div>
+            <div class="gridSpaces" id="3-5">5</div>
+            <div class="gridSpaces" id="3-6">6</div>
+            <div class="gridSpaces" id="3-7">7</div>
+            <div class="gridSpaces" id="3-8">8</div>
+            <div class="gridSpaces" id="3-9">9</div>
+            <div class="gridSpaces" id="3-10">10</div>
+            <div class="gridSpaces" id="3-11">11</div>
+            <div class="gridSpaces" id="3-12">12</div>
+            <div class="gridSpaces" id="4-1">1</div>
+            <div class="gridSpaces" id="4-2">2</div>
+            <div class="gridSpaces" id="4-3">3</div>
+            <div class="gridSpaces" id="4-4">4</div>
+            <div class="gridSpaces" id="4-5">5</div>
+            <div class="gridSpaces" id="4-6">6</div>
+            <div class="gridSpaces" id="4-7">7</div>
+            <div class="gridSpaces" id="4-8">8</div>
+            <div class="gridSpaces" id="4-9">9</div>
+            <div class="gridSpaces" id="4-10">10</div>
+            <div class="gridSpaces" id="4-11">11</div>
+            <div class="gridSpaces" id="4-12">12</div>
+            <div class="gridSpaces" id="5-1">1</div>
+            <div class="gridSpaces" id="5-2">2</div>
+            <div class="gridSpaces" id="5-3">3</div>
+            <div class="gridSpaces" id="5-4">4</div>
+            <div class="gridSpaces" id="5-5">5</div>
+            <div class="gridSpaces" id="5-6">6</div>
+            <div class="gridSpaces" id="5-7">7</div>
+            <div class="gridSpaces" id="5-8">8</div>
+            <div class="gridSpaces" id="5-9">9</div>
+            <div class="gridSpaces" id="5-10">10</div>
+            <div class="gridSpaces" id="5-11">11</div>
+            <div class="gridSpaces" id="5-12">12</div>
+            <div class="gridSpaces" id="6-1">1</div>
+            <div class="gridSpaces" id="6-2">2</div>
+            <div class="gridSpaces" id="6-3">3</div>
+            <div class="gridSpaces" id="6-4">4</div>
+            <div class="gridSpaces" id="6-5">5</div>
+            <div class="gridSpaces" id="6-6">6</div>
+            <div class="gridSpaces" id="6-7">7</div>
+            <div class="gridSpaces" id="6-8">8</div>
+            <div class="gridSpaces" id="6-9">9</div>
+            <div class="gridSpaces" id="6-10">10</div>
+            <div class="gridSpaces" id="6-11">11</div>
+            <div class="gridSpaces" id="6-12">12</div>
+            <div class="gridSpaces" id="7-1">1</div>
+            <div class="gridSpaces" id="7-2">2</div>
+            <div class="gridSpaces" id="7-3">3</div>
+            <div class="gridSpaces" id="7-4">4</div>
+            <div class="gridSpaces" id="7-5">5</div>
+            <div class="gridSpaces" id="7-6">6</div>
+            <div class="gridSpaces" id="7-7">7</div>
+            <div class="gridSpaces" id="7-8">8</div>
+            <div class="gridSpaces" id="7-9">9</div>
+            <div class="gridSpaces" id="7-10">10</div>
+            <div class="gridSpaces" id="7-11">11</div>
+            <div class="gridSpaces" id="7-12">12</div>
+            <div class="gridSpaces" id="8-1">1</div>
+            <div class="gridSpaces" id="8-2">2</div>
+            <div class="gridSpaces" id="8-3">3</div>
+            <div class="gridSpaces" id="8-4">4</div>
+            <div class="gridSpaces" id="8-5">5</div>
+            <div class="gridSpaces" id="8-6">6</div>
+            <div class="gridSpaces" id="8-7">7</div>
+            <div class="gridSpaces" id="8-8">8</div>
+            <div class="gridSpaces" id="8-9">9</div>
+            <div class="gridSpaces" id="8-10">10</div>
+            <div class="gridSpaces" id="8-11">11</div>
+            <div class="gridSpaces" id="8-12">12</div>
+        </div>
+        <div id="right-bar">4</div>
+        <div id="footer">
+            <h2 id="calendar">Week: 1</h2>
+            <button id="nxtWeekBtn">Pass Week</button>
+        </div>
+
+        <script src="../static/js/game.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    </div>
+</body>
+</html>
