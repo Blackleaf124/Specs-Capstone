@@ -9,14 +9,19 @@
 <body>
     <div>
         <h2>Login</h2>
-        <h4>Hello gamer</h4>
-        <p>Username:</p>
-        <input type="text">
-        <p>Password:</p>
-        <input type="text">
-        <br>
-        <br>
-        <button>Login</button>
+        <form action="/login" method="POST">
+            <p>
+                Email <input type="text" name="email">
+            </p>
+
+            <p>
+                Password <input type="password" name="password">
+            </p>
+
+            <p>
+                <input type="submit">
+            </p>
+        </form>
         <p>Don't have an account?</p>
         <a href="register.html">Sign up here!</a>
     </div>

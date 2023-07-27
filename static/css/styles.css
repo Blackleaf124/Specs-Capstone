@@ -1,5 +1,7 @@
 body{
-    background-color: #4f4f4f;
+    background-image: url(../imgs/background-blurred.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     text-align: center;
     color: white;
 }
@@ -15,8 +17,9 @@ body{
 }
 
 #page-wrapper div{
-    padding: 30px;
-    background: rgb(28, 28, 28)
+    padding: 15px;
+    background: rgb(28, 28, 28);
+    border-radius: 20px;
 }
 
 #header {
@@ -43,7 +46,19 @@ body{
 }
 
 #left-bar div {
+    margin-top: 15px;
     padding: 15px;
+    border: 2px solid;
+    border-radius: 15px;
+}
+
+#left-bar p {
+    margin: 3px;
+    margin-bottom: 7px;
+}
+#left-bar h4 {
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 #grid-map {
@@ -58,16 +73,13 @@ body{
 
 #grid-map div {
     border: 1px solid;
+    border-radius: 0px;
     margin: 0;
     padding: 0px;
     height: 83px;
-    width: 83px;
+    width: 85px;
     font-size: 74px;
-}
-
-/* .gridSpaces {
-
-} */
+}        
 
 #right-bar {
     grid-column-start: 7;
@@ -76,7 +88,22 @@ body{
     grid-row-end: 7;
 }
 
+#right-bar h4 {
+    margin-top: 5px;
+    margin-bottom: 8px;
+}
+
+#right-bar h5 {
+    margin-top: 5px;
+    margin-bottom: 8px;
+}
+
 #footer {
     grid-column-start: 3;
     grid-column-end: 7;
+}
+
+#calendar {
+    margin: 10px;
+    margin-top: 0px;
 }
